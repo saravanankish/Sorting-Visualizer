@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Sorting</title>
+</head>
+<body>
+    <header>
+        <h1>Sorting Visualizer</h1>
+    </header>
+    <div class="box">
+        <button class="btn" id="create" type="button" onClick="generate();">New Array</button>
+        <div class="slider">
+            <label for="rows" id="label-row">No of rows : 20</label>
+            <input type="range" min="20" max="150" value="20" class="sli" id="rows" step="5">
+        </div>
+        <div class="slider">
+            <label for="speed">Speed :</label>
+            <input type="range" min="0" max="50" class="sli" id="speed" step="10">
+        </div>
+        <div class="right">
+            <button class="btn" type="button" id="bubble">Bubble Sort</button>
+            <button class="btn" type="button" id="selection">Selection Sort</button>
+            <button class="btn" type="button" id="merge">Merge Sort</button>
+            <!-- <button class="btn" type="button">Shell Sort</button>
+            <button class="btn" type="button">Quick Sort</button> -->
+        </div>
+    </div>
+    <div id="bar-container"></div>
+    <script src="./main.js"></script>
+    <script src="./algorithms/bubble.js"></script>
+    <script src="./algorithms/selection.js"></script>
+    <script src="./algorithms/merge.js"></script>
+</body>
+</html>

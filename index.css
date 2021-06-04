@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(53, 58, 64);
+  cursor: default;
+}
+
+body {
+  min-width: 1440px;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.box {
+  padding: 10px 100px;
+  width: 100vw;
+  display: flex;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid dodgerblue;
+  padding: 12px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-right: 10px;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.sli {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.disabled {
+  border: 1px solid grey;
+  color: grey;
+}
+
+.disabled:hover {
+  border: 1px solid grey;
+  color: grey;
+  background-color: transparent;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: #fff;
+  margin: 0 15px;
+}
+
+.slider label {
+  padding-bottom: 3px;
+}
+
+#bar-container {
+  height: 80vh;
+  width: calc(100vw - 300px);
+  margin: 0 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bar {
+  background-color: dodgerblue;
+  margin: 0 1px;
+  transition: 3ms all;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
