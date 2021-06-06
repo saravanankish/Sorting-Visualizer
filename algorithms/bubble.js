@@ -6,7 +6,6 @@ var no_btn = 4;
 var no_slider = 2;
 
 document.getElementById("bubble").onclick = function(){
-    console.log((90 - speed - ((4 - Math.floor(150 / arr.length)) * 5)))
     for(var tt = 0; tt < no_btn; tt++){
         btns[tt].disabled = true;
         btns[tt].classList.add("disabled");

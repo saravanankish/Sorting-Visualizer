@@ -17,7 +17,6 @@ document.getElementById("selection").onclick = function(){
     var animate = getSelectionAnimation();
     var sorted = [];
     var sorted_idx = 0;
-    console.log(100 - speed - ((4 - Math.floor(150 / arr.length)) * 4));
     for(var i = 0; i < animate.length; i++){
         if(animate[i][0] == 0){
             setTimeout(function(p){
@@ -61,14 +60,14 @@ document.getElementById("selection").onclick = function(){
         }
     }
     setTimeout(function(){
-        for(var f in ele){
+        for(let f = 0; f < arr.length; f++){
             ele[f].style.backgroundColor = "green";
         }
-        for(var tt = 0; tt < no_btn; tt++){
+        for(let tt = 0; tt < no_btn; tt++){
             btns[tt].disabled = false;
             btns[tt].classList.remove("disabled");
         }
-        for(var ttt = 0; ttt < no_slider; ttt++){
+        for(let ttt = 0; ttt < no_slider; ttt++){
             sli[ttt].disabled = false;
         }
     }, i * (100 - speed - ((4 - Math.floor(150 / arr.length)) * 3)));
