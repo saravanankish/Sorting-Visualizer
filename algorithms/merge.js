@@ -6,7 +6,6 @@ var no_btn = 4;
 var no_slider = 2;
 
 document.getElementById("merge").onclick = function() {
-    console.log((100 - speed - ((4 - Math.floor(150 / arr.length)) * 9)))
     for(let tt = 0; tt < no_btn; tt++){
         btns[tt].disabled = true;
         btns[tt].classList.add("disabled");
@@ -41,11 +40,11 @@ document.getElementById("merge").onclick = function() {
             arrayBars[f].style.backgroundColor = "green";
         }
         for(let tt = 0; tt < no_btn; tt++){
-            btns[tt].disabled = true;
-            btns[tt].classList.add("disabled");
+            btns[tt].disabled = false;
+            btns[tt].classList.remove("disabled");
         }
         for(let ttt = 0; ttt < no_slider; ttt++){
-            sli[ttt].disabled = true;
+            sli[ttt].disabled = false;
         }
     }, i * (100 - speed - ((4 - Math.floor(150 / arr.length)) * 9)));
 }
