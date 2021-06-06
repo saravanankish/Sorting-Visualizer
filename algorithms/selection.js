@@ -70,7 +70,7 @@ document.getElementById("selection").onclick = function(){
         for(let ttt = 0; ttt < no_slider; ttt++){
             sli[ttt].disabled = false;
         }
-    }, i * (100 - speed - ((4 - Math.floor(150 / arr.length)) * 3)));
+    }, i * (100 - speed - ((4 - Math.floor(150 / arr.length)) * 4)));
 }
 
 function getSelectionAnimation(){
