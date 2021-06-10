@@ -7,4 +7,5 @@ It has visualization of three algorithms with adjustable speed of animation and 
   2. Selection Sort
   3. Merge Sort
   
-[click here to see the visualizer](https://saravanankish.github.io/Sorting-Visualizer/)
+  
+[![Home Page of visualize](/images/sort.png "Sorting Visualizer")*click here to see the visualizer*](https://saravanankish.github.io/Sorting-Visualizer/)
