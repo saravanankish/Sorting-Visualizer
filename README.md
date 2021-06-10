@@ -8,4 +8,4 @@ It has visualization of three algorithms with adjustable speed of animation and 
   3. Merge Sort
   
   
-
+[![Home Page of visualize](/images/img.png "Sorting Visualizer")*click here to see the visualizer*](https://saravanankish.github.io/Sorting-Visualizer/)
